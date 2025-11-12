@@ -1,0 +1,4 @@
+# create df
+premium_df = (
+    price_over_time.pivot(index = "report_date", columns = "organic", values = "avg_price")
+    .reset_index())
