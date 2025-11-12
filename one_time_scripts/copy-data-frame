@@ -1,0 +1,3 @@
+# make a copy of df
+df = combined_df.copy()
+df = df.rename(columns = {"class": "product_class"})
