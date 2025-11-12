@@ -1,0 +1,3 @@
+# make organic binary
+df["organic"] = df["organic"].astype(str).str.strip().str.title().replace({"True":"Yes","False":"No"})
+df["is_organic"] = (df["organic"] == "Yes").astype(int)
