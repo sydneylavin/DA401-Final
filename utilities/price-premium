@@ -1,0 +1,3 @@
+# calcuate premium
+premium_df["organic_premium_pct"] = (
+    (premium_df["Yes"] - premium_df["No"]) / premium_df["No"] * 100)
