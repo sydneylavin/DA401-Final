@@ -1,0 +1,2 @@
+# combine dfs
+combined_df = pd.concat([veg_mw_df, fruit_mw_df, veg_ne_df, fruit_ne_df], ignore_index=True)
