@@ -8,7 +8,7 @@ See whether organic products have higher prices than conventional products
 Test if the organic price premium has changed over time
 # Project Structure
 The repository is organized to keep data, code, figures, and results clear and reproducible.
-Folder descriptions:
+1. Folder descriptions:
    - data: Contains all raw and cleaned datasets for analysis. These files are not modified by scripts.
    - experiments: Used for testing models, early regression checks, and exploratory data analysis.
    - figures: Stores all figures generated from the analysis (price trends, residuals, and ad count boxplots).
