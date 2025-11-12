@@ -1,0 +1,5 @@
+# upload data 
+veg_mw_df = pd.read_excel('data/vegetable-data-MW.xlsx')
+fruit_mw_df = pd.read_excel('data/fruit-data-MW.xlsx')
+veg_ne_df = pd.read_excel('data/vegetable-data-NE.xlsx')
+fruit_ne_df = pd.read_excel('data/fruit-data-NE.xlsx')
