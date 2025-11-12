@@ -1,0 +1,8 @@
+## analysis of relationship with ad numbers
+# regression model - do organic products have more ads (control for product_class and region)?
+model2 = smf.ols(
+    formula = "current_ad_count ~ is_organic  + C(product_class) + C(region)",
+    data = df).fit()
+
+# print
+print(model2.summary())
