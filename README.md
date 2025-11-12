@@ -6,6 +6,17 @@ This research investigates the relationship between wellness labeling, like orga
 # Goals
 See whether organic products have higher prices than conventional products
 Test if the organic price premium has changed over time
+# Project Structure
+The repository is organized to keep data, code, figures, and results clear and reproducible.
+Folder descriptions:
+   - data: Contains all raw and cleaned datasets for analysis. These files are not modified by scripts.
+   - experiments: Used for testing models, early regression checks, and exploratory data analysis.
+   - figures: Stores all figures generated from the analysis (price trends, residuals, and ad count boxplots).
+   - one_time_scripts: Holds scripts used for initial setup, data downloads, or file merging.
+   - results: Contains regression outputs, summary statistics, and model coefficients.
+   - utilities: Includes helper scripts and reusable functions for data cleaning, modeling, and plotting.
+   - main.ipynb: Central analysis file combining data import, cleaning, regression modeling, and visualization.
+   - README.md: The main documentation file summarizing the project, results, and structure.
 # Sources
 USDA Agricultural Marketing Service
 # Data
