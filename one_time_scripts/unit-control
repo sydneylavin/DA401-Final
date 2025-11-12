@@ -1,0 +1,3 @@
+# control unit of measurment
+df["unit"] = df["unit"].astype(str).str.strip().str.lower()
+df = df[df["unit"] == "per lb"]
