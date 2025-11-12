@@ -10,3 +10,14 @@ Test if the organic price premium has changed over time
 USDA Agricultural Marketing Service
 # Data
 Date range: 01-01-2020 to 01-01-2025
+# Methods
+1. Cleaning:
+   Removed empty/irrelevant coulmns
+   Converted date columns to datetime format
+   Standardized numeric columns for price and ad count
+   Created binary variables for is_organic (1 = organic, 0 = non-organic)
+   Filtered for consistent units (“per lb”)
+2. Analysis
+   Grouped prices by date and label to calculate average prices over time.
+   Calculated organic price premiums (%) using an average
+   Conducted OLS regression of price premium on time (organic_premium_pct ~ time_index)
