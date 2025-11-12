@@ -1,0 +1,8 @@
+## analysis of price premiums 
+# regression model - has organic price premium has increased or decreased over time?
+model1 = smf.ols(
+    formula = "organic_premium_pct ~ time_index",
+    data = premium_df).fit()
+
+# print
+print(model1.summary())
