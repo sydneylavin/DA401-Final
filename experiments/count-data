@@ -1,0 +1,16 @@
+# count organic number
+counts = df["organic"].value_counts(dropna=False)
+print(counts)
+
+# visualize
+sns.countplot(x = "organic", data = df, palette="Set2")
+plt.title("Number of Organic vs Non-Organic Products (Per lb Only)")
+plt.xlabel("Organic Label")
+plt.ylabel("Count")
+plt.show()
+
+# look at column names
+print(df.columns.tolist())
+
+# count product classes
+print(df["product_class"].value_counts())
