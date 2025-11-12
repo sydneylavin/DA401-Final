@@ -1,0 +1,11 @@
+# looking at prices over time (o vs no)
+plt.figure(figsize = (10,6))
+sns.lineplot(x = "report_date", y = "avg_price",
+    hue = "organic", data = price_over_time)
+
+plt.title("Average Price Over-Time: Organic vs Non-Organic")
+plt.xlabel("Year")
+plt.ylabel("Average Price ($ per lb)")
+plt.legend(title = "Organic")
+plt.grid(True)
+plt.show()
