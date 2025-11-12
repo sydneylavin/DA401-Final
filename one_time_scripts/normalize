@@ -1,0 +1,6 @@
+# normalize dates
+df["report_date"] = pd.to_datetime(df["report_date"], errors = "coerce")
+df = df.dropna(subset = ["report_date", "current_wtd_avg_price"])
+
+# remove nas
+premium_df = premium_df.dropna(subset = ["organic_premium_pct"])
