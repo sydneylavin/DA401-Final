@@ -1,0 +1,2 @@
+# make time variable
+premium_df["time_index"] = (premium_df["report_date"] - premium_df["report_date"].min()).dt.days
